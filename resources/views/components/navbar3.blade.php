@@ -154,9 +154,9 @@
           </li>
         </ul>
 
-        <button class="btn btn-login custom-border mx-3" type="submit">
+        <a href="/home" class="btn btn-login custom-border mx-3 text-white" type="submit">
           Get Started &nbsp; <i class="fas fa-chevron-right"></i>
-        </button>
+        </a>
       </div>
     </div>
   </nav>

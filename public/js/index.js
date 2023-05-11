@@ -350,14 +350,6 @@ const carousel = new CardCarousel(cardsContainer);
 
 
 
-// Get the login and signup buttons
-const loginBtn = document.querySelector('.btn-login');
-
-// Add click event listeners to the buttons
-loginBtn.addEventListener('click', () => {
-  // Redirect to the login page
-  window.location.href = '/home';
-});
 
 const imageWrapper = document.querySelector('.image-wrapper')
 const imageItems = document.querySelectorAll('.image-wrapper > *')
@@ -386,5 +378,7 @@ function scrolling() {
   imageWrapper.style.left = `-${totalScroll * widthEl}px`
   imageWrapper.style.transition = '.3s'
 }
+
+
 
 
