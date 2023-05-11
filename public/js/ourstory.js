@@ -43,3 +43,14 @@
 
 
 	
+// Get the login and signup buttons
+const loginBtn = document.querySelector('.btn-login');
+
+// Add click event listeners to the buttons
+loginBtn.addEventListener('click', () => {
+  // Redirect to the login page
+  window.location.href = '/home';
+});
+
+
+	

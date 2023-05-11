@@ -44,7 +44,7 @@ Route::get('/', function () {
   Route::get('/Affiliate', [AffiliateController::class, 'beAffiliate'])->name('beAffiliate');
 
 
-  // use App\Http\Controllers\HomeController;
+// use App\Http\Controllers\HomeController;
 // Route::get('/', [HomeController::class, 'index']);
 
 // use App\Http\Controllers\AboutUsController;
