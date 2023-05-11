@@ -1,0 +1,331 @@
+/* Start: Scholarships*/
+
+#scholarships {
+    width: 100%;
+    min-height: 100%;
+    background-image: linear-gradient(
+        var(--primary) 40%,
+        rgba(33, 150, 243, 0.5)
+    );
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.scholarships-banner {
+    padding-top: 7%;
+}
+
+.banner-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+}
+
+.banner-tagline {
+    font-size: 24px;
+    font-family: "lato", sans-serif;
+}
+
+.container-scholarships {
+    margin-top: 5%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#scholarshipCard {
+    height: 280px;
+    max-width: 350px;
+    margin: 0 20px;
+    background: #0a2647;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+#scholarshipCard:hover {
+    height: 470px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#scholarshipCard .img {
+    height: 200px;
+    width: 100%;
+}
+#scholarshipCard .img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 3%;
+    object-fit: cover;
+}
+#scholarshipCard .top-text {
+    padding: 5px;
+}
+#scholarshipCard .top-text .name {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    font-family: "lato", sans-serif;
+}
+#scholarshipCard .top-text p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    line-height: 20px;
+}
+#scholarshipCard .bottom-text {
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+#scholarshipCard:hover .bottom-text {
+    opacity: 1;
+    visibility: visible;
+}
+#scholarshipCard .bottom-text .text {
+    text-align: center;
+}
+#scholarshipCard .bottom-text .btn {
+    margin: 10px 0;
+    text-align: left;
+}
+#scholarshipCard .bottom-text .btn a {
+    text-decoration: none;
+    background: #ffb100;
+    color: #0a2647;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: 0.2s;
+    font-size: 18px;
+    outline: none;
+    margin: 0;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+#scholarshipCard .bottom-text .btn a:hover {
+    transform: scale(1);
+}
+
+.scholarships-footer {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.btn-cta {
+    margin-bottom: 3%;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    background-color: var(--primary);
+    color: white;
+    border: solid 1px var(--secondary);
+    text-decoration: none;
+    padding: 5% 10%;
+    border-radius: 2%;
+}
+
+.btn-cta:hover {
+    border: solid 1px var(--light);
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    #scholarships {
+        padding-top: 10%;
+    }
+    .container-scholarships {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .card {
+        max-width: 700px;
+        margin: 20px 0;
+    }
+}
+
+/* End: Scholarships*/
+
+/* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
+
+#private,
+#ngo,
+#government {
+    line-height: 1.5;
+    background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
+}
+
+img {
+    width: 100%;
+}
+
+.main-container {
+    margin: 10%;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 5% 0;
+    color: white;
+}
+.main-container > h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 32px;
+}
+.main-container > p {
+    font-weight: 300;
+    padding: 10px 0;
+    opacity: 0.7;
+    text-align: center;
+}
+.category-head {
+    margin: 30px 0;
+}
+.category-head ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.category-title {
+    flex: 0 0 calc(16.6667% - 10px);
+    display: flex;
+    justify-content: center;
+    background: #a8a8a8;
+    padding: 12px;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.category-title:hover {
+    opacity: 0.7;
+}
+.category-title li {
+    padding: 0 10px;
+}
+.category-title span {
+    color: #222;
+}
+
+/** single post **/
+.posts-main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.posts-main-container > div {
+    box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 0.64);
+    background-color: #0c3b70;
+    border: solid 1px var(--secondary);
+}
+.post-img {
+    position: relative;
+}
+.category-name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+.business .category-name {
+    background: #00a7ea;
+}
+.culture .category-name {
+    background: #f03250;
+}
+.politics .category-name {
+    background: #f0544f;
+}
+.finance .category-name {
+    background: #2c2a4a;
+}
+.sports .category-name {
+    background: #a1e44d;
+}
+
+.post-content {
+    padding: 25px;
+}
+.post-content-top {
+    background: #80ced7;
+    color: #fff;
+    opacity: 0.8;
+    padding: 5px 0 5px 15px;
+}
+.post-content-top span {
+    padding-right: 20px;
+}
+.post-content-top .fa-comment,
+.post-content-top .fa-calendar {
+    padding-right: 5px;
+}
+.post-content h2 {
+    font-size: 22px;
+    padding: 12px 0;
+    font-weight: 400;
+}
+.post-content p {
+    opacity: 0.7;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.read-btn {
+    border: none;
+    padding: 8px 15px;
+    display: block;
+    margin: 5px auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #292929;
+    background: var(--secondary);
+    margin-bottom: 40px;
+    border-radius: 25px;
+}
+
+.read-btn:hover {
+    background: #f6f6f6;
+}
+
+/***************/
+@media (max-width: 1170px) {
+    .posts-main-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #private,
+    #ngo,
+    #government {
+        margin-top: 18%;
+        margin-bottom: 5%;
+    }
+}
+@media (max-width: 768px) {
+    .posts-main-container {
+        grid-template-columns: 1fr;
+    }
+    #private,
+    #ngo,
+    #government {
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+}
+
+/***********/
+
+.actives {
+    background: var(--secondary);
+}

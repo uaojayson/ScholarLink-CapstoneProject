@@ -1,0 +1,130 @@
+#affiliate-row {
+    background-color: linear-gradient(
+        var(--primary) 40%,
+        rgba(33, 150, 243, 0.5)
+    );
+}
+
+.affiliate-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/image/become affiliate.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.affiliate-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.become-affiliate {
+    width: 100%;
+    margin: 3.2rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+    .become-affiliate {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .become-affiliate {
+        max-width: 720px;
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-weight: 400;
+}
+h4 {
+    color: var(--light);
+}
+
+.why-section {
+    margin: 5% 10%;
+}
+
+.why-section p {
+    color: var(--light);
+}
+#description {
+    font-size: 14px;
+    font-weight: 200;
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.become-affiliate {
+    margin-top: 5%;
+}
+
+#survey-form {
+    text-align: center;
+    margin-top: 5%;
+    height: 40%;
+    width: 70%;
+    background: rgba(21, 20, 85, 0.7);
+    padding: 2.3rem 0.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 0.3px 0.3px 0.3px 0.3px var(--light);
+}
+
+.form-input {
+    margin: 0 2.5rem 1.2rem 2rem;
+}
+
+.form-input-size {
+    display: block;
+    width: 100%;
+    height: 1.5rem;
+    padding: 0.3rem 0.4rem;
+    border-radius: 0.2rem;
+    outline: 0;
+    border-style: none;
+    margin-top: 0.4rem;
+}
+
+p {
+    font-size: 1.12rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    width: 100%;
+    min-height: 6rem;
+    resize: vertical;
+    padding: 0.5rem 0 0 0.5rem;
+}
+
+#submit {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--secondary);
+    color: white;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: none;
+}
+
+.become-affiliate {
+    color: white;
+}

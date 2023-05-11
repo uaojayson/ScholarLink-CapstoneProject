@@ -1,0 +1,29 @@
+/* Start: Navigation Bar */
+
+.nav-link:hover {
+    border-bottom: 2px solid var(--secondary);
+    width: 93%;
+    transition: border-bottom 0.2s ease-in-out;
+    /* Change the duration and timing function to your preference */
+}
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary);
+    width: 93%;
+    transition: border-bottom 0.2s ease-in-out;
+    /* Change the duration and timing function to your preference */
+}
+.btn-login,
+.btn-login:hover {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+    outline: none;
+    margin: 0;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+}
+/* End: Navigation Bar */
