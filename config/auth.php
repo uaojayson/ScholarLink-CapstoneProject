@@ -35,17 +35,31 @@ return [
     |
     */
 
-    'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
-    ],
+       'guards' => [
+          'web' => [
+           'driver' => 'session',
+             'provider' => 'users',
+          ],
 
-    'admin' => [
-        'driver' => 'session',
-        'provider' => 'admins',
-    ],
+          'student' => [
+            'driver' => 'session',
+            'provider' => 'students',
+        ],
+    
+        'mentor' => [
+            'driver' => 'session',
+            'provider' => 'mentors',
+        ],
+    
+        'affiliate' => [
+            'driver' => 'session',
+            'provider' => 'affiliates',
+        ],
+      ],
+
+
+
+
     
 
     /*
@@ -65,17 +79,42 @@ return [
     |
     */
 
-    'providers' => [
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\User::class,
-        ],
+      'providers' => [
+          'users' => [
+               'driver' => 'eloquent',
+              'model' => App\Models\User::class,
+          ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
+          // 'users' => [
+          //     'driver' => 'database',
+         //     'table' => 'users',
         // ],
+
+
+    'students' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\Student::class,
     ],
+
+    'mentors' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\Mentor::class,
+    ],
+
+    'affiliates' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\Affiliate::class,
+    ],
+
+
+      ],
+
+    
+    
+    
+
+
+
 
     /*
     |--------------------------------------------------------------------------
@@ -96,14 +135,17 @@ return [
     |
     */
 
-    'passwords' => [
+     'passwords' => [
         'users' => [
-            'provider' => 'users',
-            'table' => 'password_reset_tokens',
+             'provider' => 'users',
+             'table' => 'password_reset_tokens',
             'expire' => 60,
             'throttle' => 60,
         ],
-    ],
+     ],
+
+
+  
 
     /*
     |--------------------------------------------------------------------------
