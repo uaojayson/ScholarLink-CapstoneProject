@@ -155,7 +155,7 @@
         </ul>
 
         <a href="/home" class="btn btn-login custom-border mx-3 text-white" type="submit">
-          Get Started &nbsp; <i class="fas fa-chevron-right"></i>
+          Access Account &nbsp; <i class="fas fa-chevron-right"></i>
         </a>
       </div>
     </div>
