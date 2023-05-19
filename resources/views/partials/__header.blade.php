@@ -47,7 +47,7 @@
     <link href="{{ asset('css/howitworks.css') }}" rel="stylesheet">
     <link href="{{ asset('css/affiliate.css') }}" rel="stylesheet">
     <link href="{{ asset('css/become-affiliate.css') }}" rel="stylesheet">
- 
+    {{-- <link href="{{ asset('css/becomeMentor.css') }}" rel="stylesheet"> --}}
     <!-- favicon  -->
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <link

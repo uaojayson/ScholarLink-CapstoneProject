@@ -43,6 +43,11 @@ Route::get('/', function () {
   Route::get('/Affil', [AffiliateController::class, 'afList'])->name('afList');
   Route::get('/Affiliate', [AffiliateController::class, 'beAffiliate'])->name('beAffiliate');
 
+  //Route for Mentors Page
+  use App\Http\Controllers\ourMentorController;
+  Route::get('/ourMentors', [ourMentorController::class, 'becomeMentor'])->name('becomeMentor');
+  Route::get('/Affiliate', [ourMentorController::class, 'beAffiliate'])->name('beAffiliate');
+
 
 // use App\Http\Controllers\HomeController;
 // Route::get('/', [HomeController::class, 'index']);
@@ -60,6 +65,11 @@ Route::get('/', function () {
  Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
- Route::middleware(['auth:admin'])->group(function () {
-   Route::get('/admin/dashboard', 'AdminController@dashboard');
- });
+
+ Route::middleware(['auth'])->group(function () {
+  Route::get('/student/dashboard', 'StudentController@dashboard')->middleware('role:student');
+});
+
+
+
+

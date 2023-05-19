@@ -55,7 +55,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle {{ (Request::is('ourMentors') || Request::is('Affiliate')) ? 'active' : '' }}"
                   href="#"
                   onclick="setActiveLink(this)"
                   role="button"
@@ -70,7 +70,7 @@
                   <li>
                     <a
                       class="dropdown-item"
-                      href="/become a mentor/becomeMentor.html"
+                      href="{{route('becomeMentor')}}"
                       >Become A Mentor</a
                     >
                   </li>
